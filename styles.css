@@ -1,0 +1,191 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    background-color: transparent;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 10;
+}
+
+
+/* Navbar List */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    list-style: none;
+}
+
+
+/* Logo */
+
+nav img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+
+/* Navbar Links */
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Enquiry Now Button */
+
+nav ul li:last-child {
+    margin-right: 3rem;
+}
+
+nav ul li:last-child a {
+    color: #f4c542;
+
+    border: 2px solid #f4c542;
+    border-radius: 30px;
+
+    padding: 12px 28px;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+#hero {
+    position: relative;
+    width: 100%;
+}
+
+
+/* Hero Background Image */
+
+#hero > img {
+    width: 100%;
+    height: 100vh;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Hero Text Container */
+
+#hero div {
+    position: absolute;
+
+    left: 5%;
+    bottom: 10%;
+}
+
+
+/* Hero Heading */
+#hero h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    max-width: 750px;
+}
+
+/* Hero Paragraphs */
+
+#hero p {
+    color: white;
+
+    font-size: 20px;
+    width: 700px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Explore Projects Button */
+#hero a {
+    color: #111;
+    background-color: #f4c542;
+
+    padding: 12px 25px;
+    border-radius: 30px;
+
+    text-decoration: none;
+    display: inline-block;
+}
+#hero a {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#hero a:hover {
+    background-color: #d9aa24;
+    transform: translateY(-2px);
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#hero h1 + p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 550px;
+    margin-bottom: 25px;
+}
+#hero div > p:first-child {
+    color: #f4c542;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+
+nav ul li:nth-child(2) a {
+    color: #f4c542;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f4c542;
+}
+nav ul li a {
+    transition: color 0.3s ease;
+}
+
+nav ul li:not(:last-child) a:hover {
+    color: #f4c542;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+#hero div {
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    z-index: 2;
+}
